@@ -212,6 +212,11 @@ if __name__ == '__main__':
     valid_file = GPT_CONUT_TRAINER_DIR + '../../data/data/validation_bpe.txt'
     gpt_file = GPT_CONUT_TRAINER_DIR + '../../data/models/code_gpt.pt'
 
+    print("vocab_file: ", vocab_file)
+    print("train_file: ", train_file)
+    print("valid_file: ", valid_file)
+    print("gpt_file: ", gpt_file)
+
     dictionary = Dictionary(vocab_file, min_cnt=0)
     print('dictionary initialized, vocab size:{}'.format(len(dictionary)))
 
